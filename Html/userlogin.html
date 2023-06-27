@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            width: 100%;
+            height: 710Px;
+            background-image: linear-gradient(95deg,rgb(255,17,220),rgb(152,33,195));
+            background-repeat: no-repeat;
+            background-size: 100% 720px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #a{
+            
+            width: 60%;
+            height: 40px;
+            background-color: transparent;
+            border-color: royalblue;
+            border-width: 3px;
+            border-radius: 100px;
+            text-align: center;
+            outline: none;
+            position: absolute;
+            left: 20%;
+            top: 140px;
+            color: white;
+        }
+        #cont2{
+            position: relative;
+            width: 80%;
+            height: 400px;
+            background-image: linear-gradient(90deg,rgb(99,0,0),royalblue);
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }
+        #cont1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 30%;
+            bottom: 0px;
+            width: 400px;
+            height: 300px;
+            background-color: black;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+        #login{
+            color: white;
+            position: absolute;
+            top: 10px;
+            letter-spacing: 10px;
+        }
+        #email{
+            width: 60%;
+            height: 40px;
+            background-color: transparent;
+            border-color: royalblue;
+            border-width: 3px;
+            border-radius: 100px;
+            text-align: center;
+            outline: none;
+            position: absolute;
+            left: 20%;
+            top: 80px;
+            color: white;
+        }
+        #z{
+            width: 50%;
+            height: 50px;
+            position: absolute;
+            bottom: 30px;
+            left: 25%;
+            font-size: 21px;
+            border-color: greenyellow;
+            border-width: 3px;
+            background-color: transparent;
+            color: white;
+            border-radius: 100px;
+        }
+        #z:hover{
+            background-color: purple;
+            border-color: white;
+            color: white;
+        }
+    </style>
+</head>
+<body id="bg">
+    <div id="cont2">
+        <div id="cont1">
+            <h1 id="login">Login</h1>
+            <form id="good">
+                <input placeholder="Enter your Email"  id="email">
+                <br><br>
+                <input type="password" placeholder="Password" id="a">
+                <br><br>
+                <p id="result"></p>
+                <input type="button" value="login"  id="z" onclick="fun()">
+            </form>
+        </div>
+    </div>
+    <script>
+        function fun()
+        {
+            var a="pradeep@gmail.com"
+            var b="123"
+            var c=document.getElementById("email").value 
+            var d=document.getElementById("a").value 
+            if(a==c&&b==d)
+            {
+                document.getElementById("good").setAttribute("action","../Html/index.html")
+                document.getElementById("z").setAttribute("type","submit")
+                document.getElementById("result").innerHTML=" "
+            }
+            else if(a!=c&&b==d){
+                document.getElementById("email").style.borderColor="red"
+                document.getElementById("a").style.borderColor="royalblue"
+                document.getElementById("result").innerHTML="Entered the wrong Email"
+            }
+            else if(a==c&&b!=d){
+                document.getElementById("email").style.borderColor="royalblue"
+                document.getElementById("a").style.borderColor="red"
+                document.getElementById("result").innerHTML="Entered the wrong Password"
+            }
+            else{
+                document.getElementById("email").style.borderColor="red"
+                document.getElementById("a").style.borderColor="red"
+                document.getElementById("result").innerHTML="Entered the wrong Email and Password"
+            }
+        }
+    </script>
+</body>
+</html>

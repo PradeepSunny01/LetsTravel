@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Travel</title>
+   <link rel="stylesheet" href="../Css/Gallery.css">
+   <script src="../Java Script/gallery.js" defer></script>
+</head>
+<body onload="colorrrr()">
+    <div id="a">
+        <h1 id="heading"> Korea Image Gallary </h1>
+     </div>
+     <div id="bigscreen" class="fullscreenImg" style="display:none;" onclick="imgV()">
+        <img id="fullImg" src="../Asset/Images/aa.jfif">
+        <h1 id="imgheading"> Heading </h1>
+        <p id="imgparagraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quasi. </p>
+     </div>
+     <div id="navdiv1">
+      <a href="../Html/index.html" style="text-decoration: none;color: black;"> <div  >HOME</div></a>
+  </div>
+          <div id="navdiv2"> <select onchange="window.location.href=this.value;" style="background-color: crimson;outline: none;width: 100px;font-size: 15px;"> <option> PLACES </option>
+                  <option value="../Html/GalleryIndia.html">India </option>
+                  <option value="../Html/GalleryDubai.html">Dubai </option>
+                  <option value="../Html/GalleryThailand.html"> Thailand  </option>
+                  <option value="../Html/GallerySrilanka.html"> Srilanka </option>
+                  <option value="../Html/GalleryKorea.html">  Korea </option>
+              </select>             
+          </div>
+          <div id="navdiv3" ><a href="../Html/Info.html" style="text-decoration: none;color: black;">Info</a></div>
+          <div id="navdiv4" ><a href="../Html/userlogin.html" style="text-decoration: none;color: black;">Logout</a></div>
+      
+     <!-- From here body of gallary starts -->
+     <div class="bodyofGallary">
+        <img src="../Asset/Images/ii.jfif" onclick="imgK(this.src,'Tiger in water','Tiger zinda hain in water and it is swimming')">
+        <img src="../Asset/Images/jj.jfif" onclick="imgK(this.src,'Tiger in water','Tiger zinda hain in water and it is swimming')">
+        <img src="../Asset/Images/kk.jfif" onclick="imgK(this.src,'Tiger in water','Tiger zinda hain in water and it is swimming')">
+        <img src="../Asset/Images/ll.jfif" onclick="imgK(this.src,'Tiger in water','Tiger zinda hain in water and it is swimming')">
+        <img src="../Asset/Images/mm.jfif" onclick="imgK(this.src,'Tiger in water','Tiger zinda hain in water and it is swimming')">
+        <img src="../Asset/Images/nn.jfif" onclick="imgK(this.src,'Tiger in water','Tiger zinda hain in water and it is swimming')">
+        <img src="../Asset/Images/oo.jfif" onclick="imgK(this.src,'Tiger in water','Tiger zinda hain in water and it is swimming')">
+        <img src="../Asset/Images/pp.webp" onclick="imgK(this.src,'Tiger in water','Tiger zinda hain in water and it is swimming')">
+     </div>
+</body>
+</html>
